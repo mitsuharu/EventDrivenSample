@@ -11,7 +11,8 @@ import SwiftUI
 struct EventDrivenSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EventView()
+//            ContentView()
         }
     }
 }
