@@ -53,7 +53,7 @@ final class EventState {
 extension EventState {
     func publish(message: String) {
         print("publish \(message)")
-        action.publish(message: message)
+        action.put(message: message)
     }
 }
 

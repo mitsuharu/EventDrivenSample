@@ -35,7 +35,7 @@ final class ConcurrencyBackDeployedAction: EventDrivenActionProtocol {
         observeHandler = nil
     }
     
-    func publish(message: EventMessage) {
+    func put(message: EventMessage) {
         continuation.yield(message)
     }
 }

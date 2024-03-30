@@ -49,7 +49,7 @@ final class CombineAwaitAction: EventDrivenActionProtocol {
         observeHandler = nil
     }
     
-    func publish(message: EventMessage) {
+    func put(message: EventMessage) {
         subject.send(message)
     }
 }

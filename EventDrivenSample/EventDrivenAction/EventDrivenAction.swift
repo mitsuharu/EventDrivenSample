@@ -11,6 +11,6 @@ protocol EventDrivenActionProtocol {
     typealias EventMessage = String
     typealias Handler = (EventMessage) -> Void
         
-    func publish(message: EventMessage)
+    func put(message: EventMessage)
     var observeHandler: Handler? { get set }
 }

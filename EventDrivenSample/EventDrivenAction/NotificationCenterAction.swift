@@ -32,7 +32,7 @@ final class NotificationCenterAction: EventDrivenActionProtocol  {
         observeHandler = nil
     }
     
-    func publish(message: EventMessage) {
+    func put(message: EventMessage) {
         NotificationCenter.default.post(name: .eventAction, object: message)
     }
         

@@ -34,7 +34,7 @@ final class CombineAction: EventDrivenActionProtocol {
         observeHandler = nil
     }
     
-    func publish(message: EventMessage) {
+    func put(message: EventMessage) {
         subject.send(message)
     }
 }
