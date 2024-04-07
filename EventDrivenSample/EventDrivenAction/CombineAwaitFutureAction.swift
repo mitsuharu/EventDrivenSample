@@ -1,5 +1,5 @@
 //
-//  CombineAwaitAction.swift
+//  CombineAwaitFutureAction.swift
 //  EventDrivenSample
 //
 //  Created by Mitsuharu Emoto on 2024/03/24.
@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class CombineAwaitAction: EventDrivenActionProtocol {
+final class CombineAwaitFutureAction: EventDrivenActionProtocol {
     var observeHandler: Handler? = nil
     
     private var task: Task<(), Never>? = nil

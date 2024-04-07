@@ -31,8 +31,14 @@ final class EventState {
         return state
     }
     
-    static func CombineAwait() -> EventState {
-        let action = CombineAwaitAction()
+    static func CombineAwaitContinuation() -> EventState {
+        let action = CombineAwaitContinuationAction()
+        let state = EventState(action: action)
+        return state
+    }
+    
+    static func CombineAwaitFuture() -> EventState {
+        let action = CombineAwaitFutureAction()
         let state = EventState(action: action)
         return state
     }

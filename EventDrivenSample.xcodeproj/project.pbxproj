@@ -17,11 +17,12 @@
 		9B5A91912BAFECBC003FF5EB /* EventDrivenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91902BAFECBC003FF5EB /* EventDrivenAction.swift */; };
 		9B5A91932BAFEF07003FF5EB /* NotificationCenterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91922BAFEF07003FF5EB /* NotificationCenterAction.swift */; };
 		9B5A91952BAFF21E003FF5EB /* CombineAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91942BAFF21E003FF5EB /* CombineAction.swift */; };
-		9B5A91972BAFF3D8003FF5EB /* CombineAwaitAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91962BAFF3D8003FF5EB /* CombineAwaitAction.swift */; };
+		9B5A91972BAFF3D8003FF5EB /* CombineAwaitFutureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91962BAFF3D8003FF5EB /* CombineAwaitFutureAction.swift */; };
 		9B5A91992BAFF540003FF5EB /* ConcurrencyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A91982BAFF540003FF5EB /* ConcurrencyAction.swift */; };
 		9B5A919B2BAFF80E003FF5EB /* ConcurrencyBackDeployedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A919A2BAFF80E003FF5EB /* ConcurrencyBackDeployedAction.swift */; };
 		9B5A919E2BAFFF7F003FF5EB /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A919D2BAFFF7F003FF5EB /* EventView.swift */; };
 		9B5A91A02BAFFF92003FF5EB /* EventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A919F2BAFFF92003FF5EB /* EventState.swift */; };
+		9BE507C62BC2395300EE0D74 /* CombineAwaitContinuationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE507C52BC2395300EE0D74 /* CombineAwaitContinuationAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +56,12 @@
 		9B5A91902BAFECBC003FF5EB /* EventDrivenAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDrivenAction.swift; sourceTree = "<group>"; };
 		9B5A91922BAFEF07003FF5EB /* NotificationCenterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterAction.swift; sourceTree = "<group>"; };
 		9B5A91942BAFF21E003FF5EB /* CombineAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAction.swift; sourceTree = "<group>"; };
-		9B5A91962BAFF3D8003FF5EB /* CombineAwaitAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAwaitAction.swift; sourceTree = "<group>"; };
+		9B5A91962BAFF3D8003FF5EB /* CombineAwaitFutureAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAwaitFutureAction.swift; sourceTree = "<group>"; };
 		9B5A91982BAFF540003FF5EB /* ConcurrencyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyAction.swift; sourceTree = "<group>"; };
 		9B5A919A2BAFF80E003FF5EB /* ConcurrencyBackDeployedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyBackDeployedAction.swift; sourceTree = "<group>"; };
 		9B5A919D2BAFFF7F003FF5EB /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		9B5A919F2BAFFF92003FF5EB /* EventState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventState.swift; sourceTree = "<group>"; };
+		9BE507C52BC2395300EE0D74 /* CombineAwaitContinuationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAwaitContinuationAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +153,8 @@
 				9B5A91902BAFECBC003FF5EB /* EventDrivenAction.swift */,
 				9B5A91922BAFEF07003FF5EB /* NotificationCenterAction.swift */,
 				9B5A91942BAFF21E003FF5EB /* CombineAction.swift */,
-				9B5A91962BAFF3D8003FF5EB /* CombineAwaitAction.swift */,
+				9BE507C52BC2395300EE0D74 /* CombineAwaitContinuationAction.swift */,
+				9B5A91962BAFF3D8003FF5EB /* CombineAwaitFutureAction.swift */,
 				9B5A91982BAFF540003FF5EB /* ConcurrencyAction.swift */,
 				9B5A919A2BAFF80E003FF5EB /* ConcurrencyBackDeployedAction.swift */,
 			);
@@ -297,12 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B5A91972BAFF3D8003FF5EB /* CombineAwaitAction.swift in Sources */,
+				9B5A91972BAFF3D8003FF5EB /* CombineAwaitFutureAction.swift in Sources */,
 				9B5A91682BAFEBF9003FF5EB /* ContentView.swift in Sources */,
 				9B5A91662BAFEBF9003FF5EB /* EventDrivenSampleApp.swift in Sources */,
 				9B5A919E2BAFFF7F003FF5EB /* EventView.swift in Sources */,
 				9B5A91A02BAFFF92003FF5EB /* EventState.swift in Sources */,
 				9B5A91912BAFECBC003FF5EB /* EventDrivenAction.swift in Sources */,
+				9BE507C62BC2395300EE0D74 /* CombineAwaitContinuationAction.swift in Sources */,
 				9B5A91952BAFF21E003FF5EB /* CombineAction.swift in Sources */,
 				9B5A91992BAFF540003FF5EB /* ConcurrencyAction.swift in Sources */,
 				9B5A919B2BAFF80E003FF5EB /* ConcurrencyBackDeployedAction.swift in Sources */,
